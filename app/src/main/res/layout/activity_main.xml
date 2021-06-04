@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello iot sdk!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/get_shorturl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取短链"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="77dp" />
+
+    <Button
+        android:id="@+id/start_trans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始推流"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="200dp" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="reset"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="300dp" />
+
+    <Button
+        android:id="@+id/cloud_storage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使能云存"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="400dp" />
+
+</LinearLayout>
