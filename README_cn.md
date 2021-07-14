@@ -1300,30 +1300,23 @@ public class Z3Desc {
 
 ```java
     public class DevDescIf {
-        public String mId;
-        public String mSwVer;
-        public String mSchemaId;
-        public String mProductKey;
-        public String mFirmwareKey;
-        public boolean mIsOem;
-        public String mSigmeshDevKey;
-        public String mSigmeshMac;
-        public int mUddd;
-        public int mUddd2;
-        public int mTp;
-        public int mSubTp;
-        public String mUuid;
-        public int mAbi;
-        public boolean mBind;
-        public boolean mSync;
-        public boolean mSigmeshSync;
-        public boolean mBleMeshBindReptSync;
-        public boolean mBindStatus;
-        public GwAttachAttr[] mAttr;
-        public boolean mResetFlag;
-        public int mSubListFlag;
-        public DevQos mDevQos;
-        ...
+        public String mId;                      // Device ID
+        public String mSwVer;                   // version
+        public String mSchemaId;                // Schema object model ID
+        public String mProductKey;              // Product ID(PID) You can choose between PID and Firmware Key
+        public String mFirmwareKey;             // Firmware Key
+        public boolean mIsOem;                  // Is oem?　1:firmware key  0:product key
+        public String mSigmeshDevKey;           // Sigmesh Device key (Temporarily Unsupported)
+        public String mSigmeshMac;              // Sigmesh Device mac　(Temporarily Unsupported)
+        public int mUddd;                       // User detial type define
+        public int mUddd2;                      // The maximum value is 1, reserved for user-owned child devices
+        public int mTp;                         // Device Type
+        public boolean mBind;                   // True:Is binding　/ False:unbounded
+        public boolean mSync;                   // True:Has synchronized /　False:Not synchronized
+        public boolean mSigmeshSync;            // Sigmesh synchroniz (Temporarily Unsupported)
+        public GwAttachAttr[] mAttr;            // Attribute array
+        public boolean mResetFlag;              // Reset flag
+        public ChCode mChDminfo;                // Temporary ignorability
     }
 ```
 
