@@ -1300,27 +1300,27 @@ public class Z3Desc {
 
 ```java
     public class DevDescIf {
-        public String mId;
-        public String mSwVer;
-        public String mSchemaId;
-        public String mProductKey;
-        public String mFirmwareKey;
-        public boolean mIsOem;
-        public String mSigmeshDevKey;
-        public String mSigmeshMac;
-        public int mUddd;
-        public int mUddd2;
-        public int mTp;
-        public int mSubTp;
-        public String mUuid;
-        public int mAbi;
-        public boolean mBind;
-        public boolean mSync;
-        public boolean mSigmeshSync;
-        public boolean mBleMeshBindReptSync;
-        public boolean mBindStatus;
-        public GwAttachAttr[] mAttr;
-        public boolean mResetFlag;
+        public String mId;                      //设备ID
+        public String mSwVer;                   //version
+        public String mSchemaId;                //schema物模型
+        public String mProductKey;              //产品ID即PID 与固件key二选一
+        public String mFirmwareKey;             //固件key
+        public boolean mIsOem;                  //是否oem　1:firmware key  0:product key
+        public String mSigmeshDevKey;           //sigmesh设备key  暂时不支持
+        public String mSigmeshMac;              //sigmesh设备mac　暂时不支持
+        public int mUddd;                       // user detial type define
+        public int mUddd2;                      /* 最高为1，预留给用户自有子设备*/
+        public int mTp;                         //设备Type
+        public int mSubTp;                      //设备Type
+        public String mUuid;                    
+        public int mAbi;                        
+        public boolean mBind;                   //true:已绑定　false:未绑定
+        public boolean mSync;                   //true:已同步　false:未同步
+        public boolean mSigmeshSync;            //sigmesh同步　暂时不支持
+        public boolean mBleMeshBindReptSync;    
+        public boolean mBindStatus;             
+        public GwAttachAttr[] mAttr;            //属性数组
+        public boolean mResetFlag;              //reset flag
         public int mSubListFlag;
         public DevQos mDevQos;
         ...
